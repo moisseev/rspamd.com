@@ -69,4 +69,5 @@ jobs:
             --exclude="^https://github[.]com/rspamd/rspamd[.]com/edit/master/"
             --exclude="^https://rspamd[.]com/${{ github.event.repository.name }}/$"
             --exclude="^https://www[.]ozon[.]ru/$"
-            --exclude="^https://rspamd[.]com/${{ github.event.repository.name }}/."
+
+#            --exclude="^https://rspamd[.]com/${{ github.event.repository.name }}/."
