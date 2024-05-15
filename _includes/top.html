@@ -49,7 +49,9 @@
         ga('send', 'pageview');
     </script>
     <script type="module" src="{{ site.baseurl }}/js/search.js"></script>
-    {% seo %}
+    <!-- jekyll.environment: {{ jekyll.environment }} -->
+    <!-- site.GH_ENV :{{ site.GH_ENV }} -->
+    {% if site.GH_ENV != "gh_pages" -%}{%- seo -%}{%- endif %}
 </head>
 
 <body class="d-flex flex-column h-100" data-bs-spy="scroll" data-bs-target="#navbar-spy">
