@@ -84,11 +84,19 @@ jobs:
           key: run_id-${{ github.run_id }}
       - uses: ruzickap/action-my-broken-link-checker@v2
         with:
-          url: http://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
           pages_path: ./_site-root/
           cmd_params: >
             --buffer-size=8192 --color=always --skip-tls-verification
-            --verbose --max-connections-per-host=10
-            --exclude="^https://${{ github.repository_owner }}[.]github[.]io/${{ github.event.repository.name }}/"
+            --max-connections-per-host=10
+            --exclude="^https://${{ github.repository_owner }}[.]github[.]io/${{ github.event.repository.name }}/(doc/lua/((lua|rspamd)_.+|ucl)[.]html(#.+)?|.*#top)$"
             --exclude="^https://github[.]com/rspamd/rspamd[.]com/edit/master/"
             --exclude="^https://www[.]ozon[.]ru/$"
+
+  markdown-links-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: umbrelladocs/action-linkspector@v1
+        with:
+          filter_mode: nofilter
