@@ -1,0 +1,13 @@
+dirs:
+  - .
+ignorePatterns:
+  - pattern: "^https?://localhost"
+  - pattern: "^https?://127[.]0[.]0[.]"
+  - pattern: "^https://github[.]com/rspamd/rspamd[.]com/edit/master/"
+  - pattern: "^{{ site[.]baseurl }}/doc/lua/((lua|rspamd)_.+|ucl)[.]html(#.+)?$"
+  - pattern: "^https://api[.]openai[.]com/v1/chat/completions$"
+replacementPatterns:
+  - pattern: "^((?!https?://).+)[.]html"
+    replacement: "$1.md"
+  - pattern: "^(?:{{ site[.]url }})?{{ site[.]baseurl }}(.+)$"
+    replacement: "$1"
