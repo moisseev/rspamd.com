@@ -18,8 +18,21 @@ For detailed information about this plugin, refer to the [blog post]({{ site.bas
 
 ## Configuration Options
 
+**By default, the GPT Plugin is disabled.** To enable the plugin, add the following command in your Rspamd configuration:
+
 ```hcl
 gpt {
+  enabled = true; # Ensure this line is present to enable the GPT Plugin
+}
+```
+
+The full list of the plugin configuration options:
+
+```hcl
+gpt {
+  # Enable the plugin
+  enabled = true;
+
   # Supported type: openai
   type = "openai";
   
@@ -60,6 +73,8 @@ gpt {
 
 ### Description of Configuration Options
 
+- **enabled**: A boolean value that specifies whether the GPT Plugin is enabled. Set to `true` to activate the plugin.
+
 - **type**: Specifies the GPT model type. Currently, only "openai" is supported.
   
 - **api_key**: Your API key for accessing OpenAI services. Replace "xxx" with your actual API key.
@@ -90,6 +105,7 @@ Here is an example configuration with the fields filled in:
 
 ```hcl
 gpt {
+  enabled = true; # Enable the plugin
   type = "openai";
   api_key = "your_api_key_here";
   model = "gpt-3.5-turbo";
