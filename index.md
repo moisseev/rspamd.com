@@ -6,9 +6,9 @@ title: Rspamd spam filtering system
 <div class="container-fluid d-flex flex-column p-0" style="height: calc(100vh - var(--navbar-height));">
 	<div class="r-banner d-flex flex-grow-1 align-items-center">
 		<div class="container text-center py-5">
-			<h1 class="mt-0">Rspamd</h1>
-			<p>Fast, free and open-source spam filtering system.</p>
-			<a class="btn btn-primary btn-large mt-3" href="{{ site.baseurl }}/doc/tutorials/quickstart.html">Quick start <small><i class="fa-solid fa-chevron-right"></i></small></a>
+			<h1 class="mt-0">Rspamd: Your Solution for Effective Email Protection</h1>
+			<p>Discover the power of Rspamd, the cutting-edge spam filtering system designed to protect your email communications with unmatched speed and flexibility. Tailored for businesses of all sizes, Rspamd ensures robust security and smooth operation, reducing spam and enhancing your email efficiency.</p>
+			<a class="btn btn-primary btn-large mt-3" href="{{ site.baseurl }}/doc/tutorials/quickstart.html">Discover How It Works <small><i class="fa-solid fa-chevron-right"></i></small></a>
 		</div>
 		</div>
 		<div class="container-fluid w-auto mx-2">
@@ -39,34 +39,33 @@ title: Rspamd spam filtering system
     <div class="d-flex flex-wrap justify-content-between my-4">
         <a href="{{ site.baseurl }}/doc/about/performance.html" class="r-tile">
             <img src="img/performance.jpg" alt="">
-            <h2>Performance&nbsp;<i class="fa-solid fa-chevron-right"></i></h2>
-            <p>Rspamd is designed to be fast and can process up to 100 emails per second
-            using a single CPU core</p>
+            <h2>Exceptional Performance&nbsp;<i class="fa-solid fa-chevron-right"></i></h2>
+            <p>Discover how Rspamd enhances your email security ensuring high-speed email processing.</p>
         </a>
         <a href="{{ site.baseurl }}/doc/about/features.html" class="r-tile">
             <img src="img/features.jpg" alt="">
-            <h2>Features&nbsp;<i class="fa-solid fa-chevron-right"></i></h2>
-            <p>Learn about the wide range of technologies supported by Rspamd to filter spam</p>
+            <h2>Key Features&nbsp;<i class="fa-solid fa-chevron-right"></i></h2>
+            <p>Discover the cutting-edge features that give Rspamd a competitive edge.</p>
         </a>
         <a href="{{ site.baseurl }}/doc/about/comparison.html" class="r-tile">
             <img src="img/compare.jpg" alt="">
-            <h2>Compare&nbsp;<i class="fa-solid fa-chevron-right"></i></h2>
-            <p>Compare Rspamd with other spam filtering systems</p>
+            <h2>Industry Comparison&nbsp;<i class="fa-solid fa-chevron-right"></i></h2>
+            <p>Compare Rspamd’s capabilities with other solutions to understand its value.</p>
         </a>
         <a href="{{ site.baseurl }}/doc/" class="r-tile">
             <img src="img/documentation.jpg" alt="">
-            <h2>Documentation&nbsp;<i class="fa-solid fa-chevron-right"></i></h2>
-            <p>Study how to install, configure and extend Rspamd using the documentation provided</p>
+            <h2>Comprehensive Documentation&nbsp;<i class="fa-solid fa-chevron-right"></i></h2>
+            <p>Access detailed guides to get started and optimize your Rspamd experience.</p>
         </a>
         <a href="{{ site.baseurl }}/doc/about/media.html" class="r-tile">
             <img src="img/media.jpg" alt="">
-            <h2>Media&nbsp;<i class="fa-solid fa-chevron-right"></i></h2>
-            <p>Watch videos and presentations about Rspamd</p>
+            <h2>Media Coverage&nbsp;<i class="fa-solid fa-chevron-right"></i></h2>
+            <p>See how Rspamd is being featured in industry news and media.</p>
         </a>
         <a href="{{ site.baseurl }}/support.html" class="r-tile">
             <img src="img/support.jpg" alt="">
-            <h2>Donation &amp; Support&nbsp;<i class="fa-solid fa-chevron-right"></i></h2>
-            <p>Check this page if you need help or want to make a donation or contribute to Rspamd</p>
+            <h2>Support &amp; Contributions&nbsp;<i class="fa-solid fa-chevron-right"></i></h2>
+            <p>Find out how we support our users and ways you can contribute to Rspamd.</p>
         </a>
     </div>
 	<div class="row who-uses mx-auto my-4">
