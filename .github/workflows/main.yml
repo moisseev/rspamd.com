@@ -91,3 +91,4 @@ jobs:
             --exclude="^https://opensource[.]org/license/"
             --exclude="^https://www[.]ozon[.]ru/?$"
             --exclude="^https://www[.]communigate[.]com/?$"
+            --exclude="^https://t[.]co$"
